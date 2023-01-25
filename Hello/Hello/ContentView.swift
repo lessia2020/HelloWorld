@@ -21,7 +21,10 @@ struct ContentView: View {
                     .imageScale(.large)
                     .foregroundColor(darkPurple)
                     .foregroundColor(.accentColor)
-                Text("Hello, Asado!")
+                VStack(spacing: 15) {
+                    Text("Hello, ")
+                    Text("Asado!")
+                }
             }
             .foregroundColor(Color.white)
             .font(.system(size: 110))
@@ -30,7 +33,7 @@ struct ContentView: View {
             Spacer()
             Image("dog")
                 .resizable()
-                .frame(width: 350, height: 300)
+                .frame(width: 370, height: 300)
         }
         myBgColor.ignoresSafeArea()
     }
